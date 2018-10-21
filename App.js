@@ -6,7 +6,7 @@ import LoginScreen from './app/screens/LoginScreen';
 import SignupScreen from './app/screens/SignupScreen';
 import InnerStackNavigation from './app/screens/InnerStackNavigation';
 
-class App extends React.Component {
+class App extends React.Component { 
   render() {
     return (
       <AppStackNavigator />

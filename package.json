@@ -17,10 +17,5 @@
     "react-navigation": "^2.0.1",
     "react-navigation-material-bottom-tabs": "^0.1.2",
     "styled-components": "^4.0.2"
-  },
-  "rnpm": {
-    "assets": [
-      "./app/assets/fonts/"
-    ]
   }
 }
