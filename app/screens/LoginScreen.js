@@ -21,10 +21,7 @@ class LoginScreen extends Component {
   }
 
   static navigationOptions = {
-    headerStyle: {
-      backgroundColor: '#112C3B',
-    },
-    headerTintColor: '#fff',
+    header: null
   }
 
   render() {
@@ -54,6 +51,13 @@ class LoginScreen extends Component {
               </Item>
               <View style={styles.forgottenPasswordContainer}>
                 <Text style={styles.forgottenPasswordText}>Forgot your password?</Text>
+              </View>
+              <View style={styles.noAccountContainer}>
+                <Text style={styles.noAccountText}
+                      onPress={() => this.props.navigation.navigate('SignupScreen')}
+                >
+                  Don't have an account yet? Sign up here.
+                </Text>
               </View>
             </Form>
           </View>
@@ -123,8 +127,18 @@ const styles = StyleSheet.create({
   },
   forgottenPasswordContainer: {
     alignItems: 'center',
+    marginTop: 15,
   },
   forgottenPasswordText: {
+    color: '#fff',
+    fontFamily: 'roboto-regular', 
+    fontSize: 12,
+  },
+  noAccountContainer: {
+    alignItems: 'center',
+    marginTop: 20,
+  },
+  noAccountText: {
     color: '#fff',
     fontFamily: 'roboto-regular', 
     fontSize: 12,
