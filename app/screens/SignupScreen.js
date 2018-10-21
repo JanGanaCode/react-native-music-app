@@ -161,7 +161,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#fff',
     fontFamily: 'roboto-regular', 
-    fontSize: 12,
+    fontSize: 11,
   },
   termsLink: {
     textDecorationLine: 'underline'
