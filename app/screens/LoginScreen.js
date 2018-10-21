@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { ImageBackground, View, Text, StyleSheet, StatusBar } from 'react-native';
-import { Container, Header, Content, Form, Item, Input, Label, Button, Root } from 'native-base';
+import { Form, Item, Input, Label, Button, Root } from 'native-base';
 import { Font, AppLoading } from 'expo';
 
 class LoginScreen extends Component {
@@ -56,7 +56,7 @@ class LoginScreen extends Component {
                 <Text style={styles.noAccountText}
                       onPress={() => this.props.navigation.navigate('SignupScreen')}
                 >
-                  Don't have an account yet? Sign up here.
+                  Don't have an account yet? <Text style={styles.singupLink}>Sign up here.</Text>
                 </Text>
               </View>
             </Form>
@@ -141,7 +141,10 @@ const styles = StyleSheet.create({
   noAccountText: {
     color: '#fff',
     fontFamily: 'roboto-regular', 
-    fontSize: 12,
+    fontSize: 14,
+  },
+  singupLink: {
+    textDecorationLine: 'underline'
   },
   buttons: {
     position: 'absolute',
