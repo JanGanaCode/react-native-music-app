@@ -145,7 +145,7 @@ const styles = StyleSheet.create({
   },
   buttons: {
     position: 'absolute',
-    bottom: '15%',
+    bottom: '10%',
     left: 0,
     right: 0
   },
