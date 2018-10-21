@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
   noAccountText: {
     color: '#fff',
     fontFamily: 'roboto-regular', 
-    fontSize: 11,
+    fontSize: 12,
   }
 })
 
