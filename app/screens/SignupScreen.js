@@ -64,6 +64,13 @@ class SignupScreen extends Component {
                   Already have an account? <Text style={styles.loginLink}>Log in here.</Text>
                 </Text>
               </View>
+              <View style={styles.termsContainer}>
+                <Text style={styles.termsText}
+                      onPress={() => this.props.navigation.navigate('SignupScreen')}
+                >
+                  By clicking the Sign up button you agree to our <Text style={styles.termsLink}>Terms & Conditions</Text> and <Text style={styles.termsLink}>Privacy Policy</Text>.
+                </Text>
+              </View>
             </Form>
           </View>
           <View style={ styles.buttons }>
@@ -88,7 +95,7 @@ const styles = StyleSheet.create({
   },
   greetingContainer: {
     position: 'absolute',
-    top: '10%',
+    top: '8%',
     left: 0,
     right: 0,
     alignItems: 'center',
@@ -100,7 +107,7 @@ const styles = StyleSheet.create({
   },
   formInputsContainer: {
     position: 'absolute',
-    top: '30%',
+    top: '26%',
     left: 0,
     right: 0,
   },
@@ -108,7 +115,7 @@ const styles = StyleSheet.create({
     width: '75%',
     marginLeft: 'auto',
     marginRight: 'auto',
-    marginBottom: 20,
+    marginBottom: 15,
     backgroundColor: 'rgba(127, 127, 127, .65)',
     justifyContent: 'center',
     borderWidth: 1,
@@ -141,6 +148,22 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   loginLink: {
+    textDecorationLine: 'underline'
+  },
+  termsContainer : {
+    marginTop: 10,
+    marginBottom: 10,
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    width: '80%',
+  },
+  termsText: {
+    textAlign: 'center',
+    color: '#fff',
+    fontFamily: 'roboto-regular', 
+    fontSize: 12,
+  },
+  termsLink: {
     textDecorationLine: 'underline'
   },
   buttons: {
