@@ -3,13 +3,15 @@ import { StyleSheet } from 'react-native';
 import { createMaterialTopTabNavigator} from 'react-navigation';
 import ScreenOne from './TabNavigator/ScreenOne';
 import ScreenTwo from './TabNavigator/ScreenTwo';
+import ScreenThree from './TabNavigator/ScreenThree';
+import ScreenFour from './TabNavigator/ScreenFour';
 import Icon from 'react-native-vector-icons/Ionicons'
 
 const HomeScreenTabNavigator = createMaterialTopTabNavigator({
   ScreenOne: {
     screen: ScreenOne,
     navigationOptions: {
-      tabBarLabel: 'Home',
+      tabBarLabel: 'Screen 1',
       tabBarIcon: ({ tintColor }) => (
         <Icon name="ios-home" color={tintColor} size={24} />
       )
@@ -18,12 +20,30 @@ const HomeScreenTabNavigator = createMaterialTopTabNavigator({
   ScreenTwo: {
     screen: ScreenTwo,
     navigationOptions: {
-      tabBarLabel: 'Settings',
+      tabBarLabel: 'Screen 2',
       tabBarIcon: ({ tintColor }) => (
         <Icon name="ios-settings" color={tintColor} size={24} />
       )
     }
-  }
+  },
+  ScreenThree: {
+    screen: ScreenThree,
+    navigationOptions: {
+      tabBarLabel: 'Screen 3',
+      tabBarIcon: ({ tintColor }) => (
+        <Icon name="ios-home" color={tintColor} size={24} />
+      )
+    }
+  },
+  ScreenFour: {
+    screen: ScreenFour,
+    navigationOptions: {
+      tabBarLabel: 'Screen 4',
+      tabBarIcon: ({ tintColor }) => (
+        <Icon name="ios-settings" color={tintColor} size={24} />
+      )
+    }
+  },
 }, {
     initialRouteName: 'ScreenOne',
     tabBarPosition: 'bottom',
