@@ -6,5 +6,13 @@
 
 ## Welcome Screen
 
-![alt text](https://github.com/JanGanaCode/react-native-music-app/blob/master/app/assets/img/screenshots/welcome-screen.png)
+![Welcome screen screenshot](https://github.com/JanGanaCode/react-native-music-app/blob/master/app/assets/img/screenshots/welcome-screen.png)
+
+<br>
+<br>
+<br>
+
+## Login Screen
+
+![Login screen screenshot](https://github.com/JanGanaCode/react-native-music-app/blob/master/app/assets/img/screenshots/login-screen.png)
 
